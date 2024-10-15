@@ -1,0 +1,106 @@
+@use '../utils' as *;
+
+.details-btn {
+    width: 50px;
+    height: 50px;
+    background: var(--rs-theme-bg-color);
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    transform: rotate(-45deg);
+    border: 1px solid rgb(255 255 255 / 10%);
+    transition: .3s;
+    margin-top: 26px;
+    @media #{$sm} {
+        margin-top: 0;
+        width: 40px;
+        height: 40px;
+    }
+    @media #{$xs} {
+        margin-top: 0;
+        width: 40px;
+        height: 40px;
+        line-height: 20px;
+    }
+    &:hover {
+        background-color: var(--rs-theme-color);
+        & i {
+            color: var(--rs-black-color);
+        }
+    }
+    & i {
+        font-size: 16px;
+        color: rgb(255 255 255 / 65%);   
+    }
+    &-prjt {
+        position: absolute;
+        top: 36%;
+        @media #{$xs} {
+            top: 29%;
+        }
+        left: 46%;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        background: var(--rs-theme-color);
+        & i {
+            transform: translateY(9px);
+            color: var(--rs-black-color);
+        }
+    }
+    &-wrp {
+        line-height: 50px;
+        transform: rotate(0);
+        margin-left: 100px;
+        @media #{$xl} {
+            margin-left: -40px;
+        }
+        @media #{$lg} {
+            margin-left: 64px;
+        }
+        @media #{$md} {
+            margin-left: 0;
+        }
+        @media #{$sm} {
+            margin-left: 21px;
+            line-height: 40px;
+        }
+        @media #{$xs} {
+            margin-top: 20px;
+            line-height: 40px;
+            margin-left: 0;
+        }
+        margin-top: 13px;
+    }
+}
+.rs-btn {
+    font-size: 16px;
+    @media #{$xl,$lg} {
+        font-size: 14px;
+    }
+    @media #{$xs} {
+        font-size: 14px;
+    }
+    color: black;
+    font-weight: 600;
+    padding: 10px 35px;
+    border-radius: 14px;
+    background: var(--rs-theme-color);
+    display: inline-block;
+    & i {
+        margin-left: 13px;
+        transition: .4s;
+    }
+    &:hover {
+        & i {
+            margin-left: 20px;
+            margin-right: -7px;
+        }
+    }
+    &-price {
+        color: rgb(255 255 255 / 65%);
+        background: rgb(255 255 255 / 10%);
+        transition: .4s;
+    }
+}

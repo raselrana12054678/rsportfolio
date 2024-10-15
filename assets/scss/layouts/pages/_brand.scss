@@ -1,0 +1,35 @@
+@use '../../utils' as *;
+
+.rs-brand-sub-title {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 60px;
+    & span {
+        color: var(--rs-theme-color);
+    }
+}
+.brand-logo-item {
+    width: calc(21% - 17px);
+    margin: 0 0px 70px;
+    @media #{$md} {
+        width: calc(25% - 17px);
+    }
+    @media #{$sm} {
+        width: calc(33.33% - 17px);
+        padding: 0 0px 0px;
+        display: inline-block;
+    }
+    @media #{$xs} {
+        width: calc(39% - -52px);
+    }
+    -webkit-filter: grayscale(1) opacity(0.2);
+    filter: grayscale(1) opacity(0.2);
+    display: inline-block;
+    transition: .4s;
+    &:hover {
+        filter: grayscale(0) opacity(1);
+    }
+    & img {
+        max-width: 100%;
+    }
+}

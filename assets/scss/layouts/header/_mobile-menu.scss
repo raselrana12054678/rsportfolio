@@ -1,0 +1,58 @@
+@use '../../utils' as *;
+
+.rs-offcanvas {
+    &-menu {
+        & ul {
+            & li {
+                position: relative;
+                & a {
+                    padding: 15px 0;
+                    display: block;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #fff;
+                    &:hover {
+                       color: var(--rs-theme-color);
+                    }
+                    & i {
+                      display: none;
+                    }
+                }
+               & .sub-menu {
+                    margin-left: 30px;
+                    display: none;
+                }
+                & > a {
+                    border-bottom: 1px solid rgb(255 255 255 / 65%);
+                }
+                &.active {
+                    & > a {
+                        color: var(--rs-theme-color);
+                    }
+                    & .rs-menu-close {
+                        background: var(--rs-theme-color);
+                        color: var(--rs-theme-black-color);
+                        & i {
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.rs-menu-close {
+    position: absolute;
+    right: 0;
+    top: 17px;
+    border: 1px solid rgb(255 255 255 / 65%);
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgb(255 255 255 / 65%);
+    & i {
+        transition: .4s;
+    }
+}

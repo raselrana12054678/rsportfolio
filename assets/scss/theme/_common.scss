@@ -1,0 +1,332 @@
+@use '../utils' as *;
+
+.rs-back-bg {
+    background: #070707;
+}
+.rs-theme-bg {
+    background: #131313;
+}
+.sub-text {
+    color: var(--rs-theme-color);
+}
+.extra-color {
+    color: rgb(255 255 255 / 65%);
+}
+.f-500 {
+    font-weight: 500;
+}
+.fs-18 {
+    font-size: 18px;
+    @media #{$sm} {
+        font-size: 16px;
+    }
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fs-22 {
+    font-size: 22px;
+    @media #{$lg} {
+        font-size: 20px;
+    }
+    @media #{$sm} {
+        font-size: 20px;
+    }
+    @media #{$xs} {
+        font-size: 17px;
+        margin-top: 0;
+    }
+    font-weight: 500;
+    font-family: var(--rs-fonts-body);
+}
+.fs-24 {
+    font-size: 24px;
+}
+.fs-27 {
+    font-size: 27px;
+    @media #{$lg} {
+        font-size: 22px;
+    }
+    @media #{$md} {
+        font-size: 24px;
+    }
+    @media #{$sm} {
+        font-size: 18px;
+    }
+    @media #{$xs} {
+        & br {
+            display: none;
+        }
+        font-size: 14px;
+    }
+    font-weight: 500;
+}
+.fs-30 {
+    font-size: 30px;
+    @media #{$xs} {
+        font-size: 22px;
+    }
+}
+.fs-35 {
+    font-size: 35px;
+}
+.fs-85 {
+    font-size: 85px;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+}
+.fs-55 {
+    font-size: 55px;
+    font-family: var(--rs-fonts-body);
+    font-weight: 500;
+}
+.pd-35 {
+    padding: 35px;
+}
+.mr-122 {
+    margin-right: 122px;
+}
+.text {
+    color: var(--rs-theme-color);
+}
+.text-white {
+    color: #fff;
+}
+.b-rds-10 {
+    border-radius: 10px;
+}
+.rs-rds-50 {
+    border-radius: 50%;
+}
+.p-text {
+    color: rgb(255 255 255 / 65%);
+}
+.comment-tx {
+    @media #{$sm,$xs} {
+        font-size: 14px;
+        & br {
+            display: none;
+        }
+    } 
+}
+.blog-tag {
+    & a {
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+}
+.bg-cnt {
+    border-radius: 14px;
+    padding: 45px 50px 50px;
+    @media #{$xs} {
+        padding: 45px 10px 50px;
+    }
+    background: var(--rs-theme-black-color);
+    border: 1px solid var(--rs-tsml-border-color);
+    @media #{$md,$sm,$xs} {
+        margin-top: 40px;
+    }
+}
+.lbl {
+    @media #{$sm,$xs} {
+        margin-top: 35px;
+    }
+}
+
+.mbb {
+    @media #{$xl,$md,$sm,$xs} {
+        margin-bottom: 34px;
+    }
+    & p {
+        padding-right: 10px;
+    }
+}
+.mdrn {
+    @media #{$md,$sm} {
+        margin-left: 10px;
+    }
+    @media #{$xs} {
+        margin-left: 0;
+    }
+}
+.pt-title {
+    @media #{$md} {
+        font-size: 21px;
+        margin-bottom: 20px;
+        & br {
+            display: none;
+        }
+    }
+    @media #{$sm} {
+        font-size: 15px;
+        margin-bottom: 15px;
+        & br {
+            display: none;
+        }
+    } 
+    @media #{$xs} {
+        font-size: 16px;
+        margin-bottom: 15px;
+        & br{
+            display: none;
+        }
+    }
+}
+.title-sm {
+    @media #{$sm} {
+        font-size: 30px;
+    }
+    @media #{$xs} {
+        font-size: 20px;
+    }
+}
+.prc-title {
+    @media #{$sm} {
+        font-size: 26px;
+    }
+    @media #{$xs} {
+        font-size: 21px;
+    }
+}
+.thm-title {
+    font-size: 45px;
+    font-family: var(--rs-fonts-body);
+    font-weight: 500;
+    @media #{$xl} {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    @media #{$lg} {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    @media #{$md} {
+        font-size: 40px;
+        margin-bottom: 10px;
+        & br {
+            display: none;
+        }
+    }
+    @media #{$sm} {
+        font-size: 30px;
+        margin-bottom: 10px;
+        & br {
+            display: none;
+        }
+    }
+    @media #{$xs} {
+        font-size: 27px;
+        margin-bottom: 10px;
+        & br {
+            display: none;
+        }
+    }
+}
+.b-title {
+    @media #{$xs} {
+        font-size: 30px;
+    }
+}
+
+.inf-box {
+    @media #{$xs} {
+        margin-bottom: 15px;
+    }
+}
+.mrt {
+    @media #{$xl,$lg} {
+        margin-top: 15px;
+    }
+}
+.p-mb {
+    @media #{$sm,$xs} {
+        margin-bottom: 60px;
+    }
+}
+.p-sz {
+    @media #{$lg,$md,$sm} {
+        font-size: 14px;
+    }
+    @media #{$xs} {
+        font-size: 13px;
+    }
+}
+.t-lst {
+    @media #{$xs} {
+        margin-bottom: 40px;
+    }
+}
+.bdcm {
+    @media #{$xs} {
+        font-size: 28px;
+    }
+}
+.bdcm-title {
+    @media #{$xs} {
+        font-size: 23px;
+    }
+}
+.thmb {
+    @media #{$sm,$xs} {
+        margin-bottom: 30px;
+    }
+}
+
+.cmmts-lft {
+    @media #{$xs} {
+        padding-left: 7px;
+    }
+}
+.frm {
+    @media #{$xs} {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.c-title {
+    @media #{$lg} {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    @media #{$md} {
+        & br {
+            display: none;
+        }
+    }
+    @media #{$sm} {
+        margin-bottom: 10px;
+    }
+    @media #{$xs} {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}
+.location {
+    @media #{$lg} {
+        font-size: 14px;
+        & br {
+            display: none;
+        }
+        & span {
+            margin-left: 0;
+        }
+    }
+}
+.map-area {
+    @media #{$xs} {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.fq-spce {
+    margin-bottom: 25px;
+    @media #{$md,$sm,$xs} {
+        margin-top: 40px;
+    }
+}
+.tsml-title {
+    @media #{$md} {
+        margin-bottom: 0px;
+    }
+}

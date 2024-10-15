@@ -1,0 +1,61 @@
+@use '../../utils' as *;
+
+.rs-skill {
+    &-area {
+        @media #{$xs} {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        & .skill-title {
+            @media #{$xs} {
+                font-size: 20px;
+                margin-bottom: 13px;
+            }
+        }
+    }
+    &-items {
+        transition: .5s;
+        text-align: center;
+        margin-bottom: 30px;
+        border-radius: 14px;
+        padding: 25px 10px 10px;
+        background: var(--rs-theme-black-color);
+        border: 1px solid hsl(0deg 0% 100% / 10%);
+        &:hover {
+            border-color: var(--rs-theme-color);
+            & .percent {
+                background: var(--rs-theme-color);
+                color: var(--rs-black-color);
+            }
+        }
+        &-wrapr {
+            @media #{$md,$sm,$xs} {
+                margin-top: 40px;
+            }
+        }
+        & img {
+
+        }
+        & h5 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            color: #fff;
+        }
+        & span {
+            &.percent {
+                padding: 10px;
+                display: block;
+                font-size: 20px;
+                font-weight: 600;
+                transition: .5s;
+                line-height: 1.2;
+                border-radius: 14px;
+                background: #131313;
+                font-family: var(--rs-fonts-body);
+                color: hsla(0,0%,100%,.35);
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+@use '../../utils' as *;
+
+.rstestimonial {
+    &__item {
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        text-align: center;
+        padding: 50px 60px;
+        @media #{$lg} {
+            padding: 50px 31px;
+        }
+        @media #{$md} {
+            padding: 50px 31px;
+        }
+        @media #{$sm} {
+            padding: 50px 81px;
+        }
+        @media #{$xs} {
+            padding: 50px 38px;
+        }
+        border-radius: 16px;
+        background: var(--rs-black-color);
+        border: 1px solid var(--rs-tsml-border-color);
+        display: inline-block;
+        &:hover {
+            background: var(--rs-theme-bg-color);
+        }
+    }
+    &__author {
+        position: relative;
+        & span {
+            & i {
+                position: absolute;
+                top: 5px;
+                left: 56px;
+                font-weight: 900;
+                transition: 0.5s;
+                color: var(--rs-theme-color);
+                width: 60px;
+                height: 60px;
+                @media #{$xl} {
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    left: 37px;
+                }
+                @media #{$lg} {
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    left: 35px;
+                }
+                @media #{$md} {
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    left: 55px;
+                }
+                @media #{$xs} {
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    left: 46px;
+                }
+                background: var(--rs-theme-black-color);
+                line-height: 60px;
+                border-radius: 50%;
+                text-align: center;
+            }
+        }
+    }
+    &__text {
+        & p {
+            color: rgb(255 255 255 / 65%);
+        }
+    }
+    &__name {
+        font-size: 22px;
+        color: #fff;
+        font-family: var(--rs-fonts-body);
+        font-weight: 500;
+    }
+    &__desig {
+        font-size: 14px;
+        color: var(--rs-theme-color);
+    }
+    &__swiper-slide-arrow {
+        display: flex;
+        align-items: center;
+        @media #{$md,$sm,$xs} {
+            margin-bottom: 40px;
+        }
+    }
+    &__swiper-button-next {
+            width: 50px;
+            height: 50px;
+            color: #fff;
+            transition: 0.5s;
+            font-weight: 300;
+            line-height: 50px;
+            border-radius: 50%;
+            margin-right: 30px;
+            background: transparent;
+            text-align: center;
+            border: 1px solid var(--rs-tsml-border-color);
+            transform: rotate(45deg);
+            &:hover {
+                background: var(--rs-theme-color);
+                color: var(--rs-black-color);
+            }
+    }
+    &__swiper-button-prev {
+            width: 50px;
+            height: 50px;
+            color: #fff;
+            transition: 0.5s;
+            font-weight: 300;
+            line-height: 50px;
+            border-radius: 50%;
+            background: transparent;
+            text-align: center;
+            border: 1px solid var(--rs-tsml-border-color);
+            transform: rotate(-45deg);
+            &:hover {
+                background: var(--rs-theme-color);
+                color: var(--rs-black-color);
+            }
+        & i {
+
+        }
+    }
+}

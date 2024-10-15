@@ -1,0 +1,141 @@
+@use '../../utils' as *;
+
+
+.footer-logo {
+    @media #{$md,$sm,$xs} {
+        margin-bottom: 40px;
+    }
+}
+.footer-title {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 28px;
+    font-weight: 400;
+    font-family: var(--rs-fonts-body);
+}
+
+.footer-widget {
+    &-wrappr {
+        @media #{$sm,$xs} {
+            padding-bottom: 60px;
+        }
+    }
+    position: relative;
+    margin-bottom: 25px;
+    @media #{$xs} {
+        margin-bottom: 0;
+    }
+    margin-top: 8px;
+    &-contacts-info {
+        @media #{$xs} {
+            margin-top: 40px;
+        }
+        & ul {
+            & li {
+                @media #{$sm} {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    & ul {
+        margin: 0;
+        padding-left: 0;
+        & li {
+            color: rgb(255 255 255 / 65%);
+            display: inline-block;
+            font-size: 16px;
+            margin-right: 22px;
+            font-family: var(--rs-fonts-body);
+            font-weight: 400;
+            margin-bottom: 20px;
+            @media #{$xs} {
+                font-size: 14px;
+                margin-right: 11px;
+            }
+            &:hover {
+                color: var(--rs-theme-color);
+            }
+            & span {
+                padding-left: 33px;
+            }
+            & i {
+                font-size: 16px;
+                @media #{$xs} {
+                    font-size: 14px;
+                }
+                margin-top: 8px;
+                color: var(--rs-theme-color);
+                margin-right: 20px;
+            }
+        }
+    }
+    & form {
+        & label {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            color: #fff;
+            & i {
+                color: var(--rs-theme-color);
+                padding-bottom: 20px;
+            }
+        }
+        & input {
+            font-size: 16px;
+            color: rgb(255 255 255 / 65%);
+            padding: 0 0 0px 31px;
+            border: none;
+            margin-right: auto;
+            background: transparent;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+            width: 50%;
+            text-transform: lowercase;
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.3);
+                font-size: 16px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+.footer-bottom { 
+    &-content {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: var(--rs-fonts-body);
+        & p {
+            @media #{$md,$xs} {
+                font-size: 14px;
+            }
+        }
+    }
+    &-menu {
+        text-align: right;
+        @media #{$sm,$xs} {
+            text-align: inherit;
+        }
+        & ul {
+            & li {
+                display: inline-block;
+                margin-right: 30px;
+                @media #{$md} {
+                    margin-right: 11px;
+                }
+                @media #{$xs} {
+                    margin-right: 14px;
+                }
+                & a {
+                    color: rgb(255 255 255 / 65%);
+                    @media #{$md,$xs} {
+                        font-size: 15px;
+                    }
+                    &:hover {
+                        color: var(--rs-theme-color);
+                    }
+                }
+            }
+        }
+    }
+}

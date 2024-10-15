@@ -1,0 +1,160 @@
+@use '../../utils' as *;
+
+.rsfaq-area {
+    max-height: 100%;
+    display: flow-root;
+    overflow-y: hidden;
+    @media #{$lg} {
+        padding-bottom: 80px;
+    }
+    @media #{$md,$sm} {
+        padding-bottom: 87px;
+    }
+    @media #{$xs} {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 87px;
+    }
+}
+.rsfaq {
+    &__image {
+        max-width: 550px;
+        position: relative;
+        padding-right: 22%;
+        padding-bottom: 25%;
+    }
+    &__image-one {
+        position: relative;
+        z-index: 2;
+        & img {
+            max-width: 100%;
+            display: inline-block;
+        }
+    }
+    &__image-two {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 75%;
+        z-index: 3;
+        @media #{$xs} {
+            position: absolute;
+            right: 0;
+            max-width: 75%;
+            bottom: 0;
+        }
+        & img {
+            max-width: 100%;
+            display: inline-block;
+        }
+        &-wrap {
+            left: 44%;
+            bottom: 14%;
+            @media #{$xl} {
+                left: 52%;
+                bottom: 10%;
+            }
+            @media #{$lg} {
+                bottom: 1%;
+            }
+            @media #{$sm} {
+                bottom: 10%;
+            }
+            & img {
+                @media #{$sm} {
+                    width: 100%;
+                }
+                @media #{$xs} {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &__shape-one {
+        content: '';
+        left: 29%;
+        @media #{$sm} {
+            left: 30%;
+        }
+        @media #{$xs} {
+            left: 0;
+            top: 11%;
+        }
+        top: 5%;
+        position: absolute;
+        z-index: 1;
+    }
+    &__shape-two {
+        & img {
+            content: '';
+            left: 9%;
+            bottom: 10%;
+            position: absolute;
+            z-index: 1;
+            @media #{$xs} {
+                display: none;
+            }
+        }
+    }
+    &__first-icon {
+        & i {
+            top: 17%;
+            right: 0;
+            @media #{$lg} {
+                top: 20%;
+                right: 5%;
+                font-size: 40px;
+            }
+            @media #{$md} {
+                top: 10%;
+                right: 12%;
+                font-size: 40px;
+            }
+            @media #{$sm} {
+                top: 12%;
+                right: 7%;
+                font-size: 35px;
+            }
+            @media #{$xs} {
+                font-size: 30px;
+                right: 7%;
+                top: 10%;
+            }
+            position: absolute;
+            font-size: 56px;
+            color: var(--rs-theme-color);
+        }
+    }
+    &__last-icon {
+        & i {
+            bottom: 18%;
+            @media #{$xl} {
+                bottom: 14%;
+            }
+            left: 16%;
+            @media #{$lg} {
+                left: 24%;
+                bottom: 12%;
+                font-size: 40px;
+            }
+            @media #{$md} {
+                bottom: 16%;
+                left: 23%;
+                font-size: 40px;
+            }
+            position: absolute;
+            font-size: 56px;
+            @media #{$sm} {
+                bottom: 16%;
+                left: 24%;
+                font-size: 35px;
+            }
+            @media #{$xs} {
+                bottom: 11%;
+                left: 24%;
+                font-size: 30px;
+            }
+            color: var(--rs-theme-color);
+        }
+    }
+}

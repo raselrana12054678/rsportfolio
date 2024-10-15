@@ -1,0 +1,105 @@
+@use '../../utils' as *;
+
+.rs-price { 
+    &-area {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    &-item {
+        &-wrap {
+            padding: 10px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            background: var(--rs-theme-black-color);
+            &:hover {
+                & .rs-btn-price {  
+                    color: #131313;
+                    background: var(--rs-theme-color);
+                }
+            }
+        }
+        padding: 47px 50px;
+        @media #{$lg} {
+            padding: 47px 18px;
+        }
+        @media #{$md} {
+            padding: 47px 35px;
+        }
+        @media #{$xs} {
+            padding: 47px 35px;
+        }
+        border-radius: 16px;
+        background: #131313;
+        border: 1px solid var(--border-color);
+        & .title {
+            font-size: 24px;
+            color: #fff;
+            padding-bottom: 15px;
+        }
+        & p {
+            color: rgb(255 255 255 / 65%);
+            font-size: 16px;
+            margin-bottom: 40px;
+            @media #{$xs} {
+                margin-bottom: 20px;
+            }
+            & span {
+                color: var(--rs-theme-color);
+            }
+        }
+        & .price {
+            font-size: 48px;
+            @media #{$xs} {
+                font-size: 40px;
+            }
+            font-weight: 500;
+            color: var(--rs-theme-color);
+            font-family: "DM Sans", sans-serif;
+            & span {
+                font-size: 16px;
+                color: rgb(255 255 255 / 65%);;
+            }
+        }
+    }
+    &-details {
+        padding: 40px 50px;
+        @media #{$lg} {
+            padding: 40px 17px;
+        }
+        @media #{$md} {
+            padding: 40px 30px;
+        }
+        @media #{$xs} {
+            padding: 40px 17px;
+        }
+        & p {
+            font-size: 16px;
+            color: rgb(255 255 255 / 65%);
+            margin-bottom: 34px;
+        }
+        & ul {
+            & li {
+                line-height: 0;
+                margin-bottom: 50px;
+                @media #{$lg} {
+                    font-size: 16px;
+                    margin-bottom: 25px;
+                }
+                @media #{$md} {
+                    margin-bottom: 30px;
+                }
+                @media #{$xs} {
+                    margin-bottom: 26px;
+                    font-size: 15px;
+                }
+                font-size: 20px;
+                color: #fff;
+                & i {
+                    color: var(--rs-theme-color);
+                    margin-right: 15px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
